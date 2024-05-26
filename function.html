@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+//console.log("function:");
+//function: a peice of code where you can excute repeatdly ....this is user drivery there are built fuction also availble where you just haave to call
+
+//fuction declare this time you can create variable called parameter
+// function fn(){
+//     console.log("function running")
+// }
+// //function call //invoke //here you can send argument
+// fn();
+//function function_name(){code}funciton call..
+//  function num(a,b){
+//     let sum=a+b
+//     console.log(sum)
+//  }
+//  num(23,30);
+//  num(34,60);
+//  num(80,90);
+
+ //program 1
+
+//  function salary(a){
+//     let sal=a+(a*10/100);  //5*5/100 to giving the % this is rule 
+//     console.log(sal)
+//  }
+//  salary(1000);
+
+ //2
+
+// function cal(salary){// parameters 
+//     let num =salary+(salary*10/100);
+//     return num //it will return the value to invoke function if dont want to print here and after return you can not write any code
+// }
+
+//     function printsalary(s){
+    
+//         console.log(s)
+//     }
+    
+//     let ans=cal(1000); 
+//     printsalary(ans);//agrument 
+
+//alert ("welcome here")to giving the alert to user 
+//prompt ("enter the num"):it will return the value to functio call it is user input 
+
+//3
+// function sum(num)
+// {
+//     let a=num+(num*10/100);
+//     alert(a);
+//     console.log(a);
+// }
+// let b=Number(prompt("enter thee value"));
+// sum(b);
+
+//Number(100)=convert into number
+//boolean (1) =convert into true/false
+//string ()convert into string when console.log(a-b)-symbol use then automatically convert into string
+
+
+//4
+// function z(){
+//     console.log("called")
+// }
+// function abc(a){//callback : function  you passed function as agrument to another function that is called callback
+//     a()//function calling ....
+    
+// }
+// abc(z)//here i passed the funtion
+
+//anonymous function 
+
+// function ab(callback){
+//     callback(10)//this is calling function passing argument as well 
+// }
+// ab(function(a){console.log("running",a)})//this is  function passing as a agrument to another function 
+
+
+//arrays :take input from user and insert iand that name into the array and returns new array length 
+
+// let arr=[]
+// function data(){
+//      let val=prompt("enter the number");
+//     //    arr[arr.length+1]=val; it will push into end10
+//        arr[arr.length]=val;
+//        return arr.length
+// }
+// data();
+// console.log(arr)
+
+
+//arrray methods
+
+// let arr=[10,20,30]
+// console.log(arr)
+
+// arr.push(10)
+// arr.push(60)
+
+// arr.pop()
+//  console.log(arr)
+
+//  console.log(arr.shift());
+
+//  console.log(arr.unshift(90))
+//  console.log(arr)
+
+//  console.log(arr.sort());//it will sort into acsending into order
+//  console.log(arr.reverse());
+ 
+
+//  let a=arr.includes(22);// it will check the data that is available or not ....if not then return false
+//  console.log(a)
+
+//here you are gonna repeat logic again so that we will use function
+
+ //let b=[10,20,34,40,50,60]
+//  let val=34;
+//   for(let i=0; i<=b.length; i++){
+//     if(b.length==val){
+//         // console.log(b)
+//         console.log("this is already avaible ",b.includes(val))
+//     }
+//     else{
+//         b.push(val)
+//     }
+//     console.log(b)
+
+//  }
+
+ 
+
+// function insert(a){
+//     if(b.includes(a))
+//     {
+//         console.log("already there")
+//     }
+//     else{
+//         b.push(29)
+//     }
+// }
+// insert(28);
+// console.log(b)
+
+
+// let b=[10,20,30,40,40,50]
+
+// console.log(b.join("  "))
+
+// console.log(b.slice(2,4))//2 hi cheezein bhejni hoti hai 
+
+//string methods 
+
+// let str="hello world"
+// console.log(str)
+
+// let a=str.charAt(2)//it will pass the index
+
+// let b=str.split(" , ")//convert into string ek _se array ki trah space dega har ekk word mein 
+
+// console.log(b)
+
+// console.log(a)
+
+
+//create a function which returns true if a string is palindrome or false if not 
+//first convert  string into array and then reverse and to checking the condition again convert into array into string 
+
+//let str1="NItin"
+// let an=str1.split("").reverse().join("")
+// console.log(an)
+// if(an.toLowerCase()==str1.toLowerCase()){
+//     console.log(true)
+// }
+// else{
+//     console.log(false)
+// }
+
+
+//math and date 
+// let ans=Math.round(10.2)//aporx
+// Math.floor(10.9)//10.3 ye ek point piche 
+// Math.ceil()//10.3 age ke leke jayega 11
+
+//0.92*10=9.2
+
+//console.log(Math.ceil(Math.random()*6));
+//ye random num dega 0 to 0. mein
+// *6 ->0.xx=5.xx
+//math.ceil=1=6
+
+//console.log(ans)
+//0.9 ko 
+
+//let random=Math.random()*4
+//console.log(random)
+//let int=Math.ceil(random)
+
+//console.log(int)
+
+//instance in (date)this blueprint ismien sare feature c 
+/*let num=new Date() ;
+console.log(num.getDate())
+console.log(num.getHours())
+console.log(num.getTime())
+console.log(num.getMinutes())
+console.log(num.getSeconds())
+console.log(num.getMilliseconds())
+console.log(num.getFullYear())
+
+console.log(num.toLocaleTimeString())
+console.log(num.toLocaleDateString())
+console.log(num.toLocaleString())*/
+
+//const you can not change  the variable you can not use the varibale to assign other value any type this is block scope variable 
+
+//{
+    //let a=10 const a=10  it can not use out of block 
+//}
+
+// var a=10;
+// var a=10 it will show new number
+
+
+
+// let random=6;
+// if(random<prompt("enter the number"))
+// {
+//     console.log("number is greater")
+// }
+   
+//     if(random==5){
+//     console.log("match");
+// }
+// else{
+//     console.log("dont match");
+// }
+// console.log("number is greater")
+
+//game changer take input from user if 1 to 6 number then print win else loose
+
+// let user=prompt("enter the number")
+// let random=Math.ceil(Math.random())
+
+// if(user==random){
+//     console.log("win")
+// }
+// else{
+//     console.log("loose")
+// }
+
+// let arr=[10,20,30,40]
+// let ans=arr.map(function(item,index){
+//     return item+10
+// })
+// console.log(arr)
+// console.log(ans)
+
+
+
+// let b=[10,20,30,40,50]
+
+// let c=b.map((num)=>{
+//     return num*2
+// })
+// console.log(b)
+// console.log(c)
+
+// let salary=[10,20,30,40,50]
+
+// let sal=salary.map((n)=>{
+//     let result =n-(n*10/100)
+//     return result;
+// })
+// console.log(sal)
+// console.log(salary)
+
+let salary=[10,20,30,40,50];
+
+let sal=salary.map(function(n){
+           return n*10
+})
+console.log(sal)
+
+
+//find ,findindex
+
+</script>
+</body>
+</html>

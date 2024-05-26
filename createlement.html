@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-black{
+            color: white;
+        }
+    </style>
+
+</head>
+<body class="bg-black" style="background-color:black; ">
+    <div id="container">
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+    </div>
+<script>
+
+    //this is we are modifying in html by getting it elements
+
+    // let arr=["one","two","three","four","five"]
+
+    // let ele=document.getElementsByTagName("h1")
+
+    // for(let i=0; i<=arr.length; i++){
+       
+    //        ele[i].innerHTML=arr[i]
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+//you can create something like this we are creating eleement and giving new id and class appending to body 
+    let container=    document.getElementById("container")
+    let arr=["one","two","three","four"]
+ for(let i=0; i<arr.length; i++){
+const elem=document.createElement("h1")
+console.log(elem)
+elem.innerHTML=arr[i]
+elem.id="heading"
+elem.classList="new" //or you can set through method
+elem.setAttribute("title","hello") 
+container.appendChild(elem)
+console.log(elem)
+ }
+
+
+    </script>
+</body>
+    
+</body>
+</html>

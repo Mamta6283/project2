@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        border: 2px solid red;
+        
+    }
+    #btn{
+        border: 2px solid green;
+        
+    }
+    #extra{
+        border: 2px solid blue;
+        display: none;
+    }
+    .bg-black{
+        color: white;
+    }
+
+</style>
+<body class="bg-black" style="background-color: black;">
+    <div id="container">
+        <button id="btn">click me</button>
+        <div id="extra">
+            <ul>
+                <li>one </li>
+                <li>one </li>
+                <li>one </li>
+                <li>one </li>
+                <li>one </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let container=document.getElementById("container")
+
+        let button=document.getElementById("btn")
+
+        let extra=document.getElementById("extra")
+        
+        container.addEventListener("mouseover", function (e){
+            extra.style.display="block"
+
+        })
+        
+       
+            
+        
+
+        container.addEventListener("mouseout",function(){
+            extra.style.display="none"
+        })
+    
+    </script>
+</body>
+</html>

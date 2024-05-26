@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //loop repeating the statment again & again (iteration)
+     
+
+    //for loop
+    //for(intializaiton,condition ,updation)
+   
+
+    // for( let i=0; i<=10; i++)
+    // {
+    //     console.log("i=",i);
+    // }
+    // console.log("end of iteratiion");
+
+    //table print 
+// let num=16
+// for(let i=1; i<=10;  i++)
+// {
+//    // table=table*i;
+//     console.log("num=",num*i)
+
+// }
+
+
+// let num=2;
+// for(let i=1; i<=10; i++)
+
+// {
+//     num=i+2
+//     console.log("num=",num*i);
+// }
+// console.log("end of loop");
+
+//prime number jo khud ke sath divide hota hai check remainder //composite number...
+  let num=7
+  //let b=0
+  let isprime=true //this is flag approach
+
+for(let i=2; i<=num-1; i++)
+{
+    if(num%i===0)
+    {
+     // let b="composite"
+     // break;
+    //   console.log(b);
+    //console.log("it is composite")
+
+    isprime=false
+    }
+   // else{
+    
+      // let b="prime";
+       
+    //    console.log(a);
+   // console.log("it is prime")
+}
+//}
+
+if(isprime)
+{
+    console.log("prime")
+}
+else{
+    console.log("composite")
+}
+
+
+
+// console.log(b);
+
+
+//while loop this is entry control loop 
+//while (condition){
+  //statment 
+//increment /decrment upadation}
+  
+
+//infinite loop 
+// let i=10;
+// while(i>0)
+// {
+//     console.log(i);
+//     i--;
+// }
+    
+//do while this is exit controlled loop 
+//iteration means kitni bar chle 
+
+// let a =10
+// do{
+//     a++
+//     console.log(a)
+// }
+// while(a<10)
+
+
+//factorial program
+
+
+
+
+// let fact=5
+/*let n=5
+let fact=1
+
+
+while(n>=0)
+{
+    fact=fact*n;
+
+    console.log(fact)
+    n--
+}*/
+// let n=5
+// let num=" "
+//  for(let i=0; i<5; i++)
+//  {
+//     console.log(num)
+
+//     for(let j=0; j<6; j++){
+//          console.log(num)
+//     }
+// }
+
+
+
+// print the * in paramid form
+let n=5
+let str=""
+for(let i=1; i<=n; i++)
+ for(let j=0; j<=n; j++)
+{
+    str+="*"
+ console.log(str)
+ break
+    
+
+ 
+
+}
+// printing the * in rows and columns
+// let n=5
+// let str=""
+// for(let i=1; i<=5; i++)
+//  for(let j=0; j<=6; j++)
+// {
+//     str+="*"
+//  console.log(str)
+// }
+//console.log(str)
+//str=""
+    
+
+
+// console.log(str)
+//str=""
+   
+
+//Arrays : data structure[] representation  
+
+let classroll=[10,20,49,50,60,70,30] 
+//arr[index]
+//console.log(classroll)
+//two ways of printing the array
+// for(let i=0; i<=7; i++)
+// {
+//     console.log(classroll[i])
+// }
+//this is using length
+// for(let i=0; i<=classroll.length; i++)
+// {
+//     console.log(classroll[i])
+// }
+// console.log(classroll)
+
+//if you want to  print the array in opposite direction
+// for(let i=classroll.length-1; i>=0; i--)
+// {
+//     console.log(classroll[i])
+// }
+
+// console.log(classroll[i])
+
+//find out even and odd using array:..
+
+// for(let i=0; i<=classroll.length; i++)
+// {
+//     if(classroll[i]%2==0)
+//     {
+//     console.log("even",classroll[i])
+//     }
+// else {
+//     console.log("odd",classroll[i])
+// }
+//}
+//console.log(classroll[i])
+
+
+
+ // greatest find number 
+//  let greatest=classroll[0]
+//  for(let i=1; i<=classroll.length-1; i++)
+//  {
+//     if(classroll[i]>=greatest)//maximize  
+//     if(classroll[i]>=greatest)//minimize   
+//     {
+//         greatest=classroll[i]
+//        // console.log("its higher",greatest)
+//     }
+// }
+//     console.log("greatest",greatest)
+ 
+//find the number is availble or not 
+
+let target=60
+
+for(let i=0; i<=classroll.length; i++)
+{
+    if(target==classroll[i])
+    {
+        console.log("target",classroll[i])
+    }
+    else{
+        console.log("-1")
+    }
+}
+
+//-i print krna hai 
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let name="mamta";
+// let lname="rani";
+
+// console.log("mamta "+ "rani")
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

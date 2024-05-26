@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click</title>
+</head>
+<style>
+    .bg-black{
+        color: beige;
+    }
+
+
+</style>
+<body class="bg-black" style="background-color: black;">
+
+<button>clickme</button> 
+<!-- <button>clickme</button> -->
+
+   
+   
+   
+   
+   
+
+   
+   <script>
+        let elem =document.getElementsByTagName("button")
+
+        //elem.addeventlistner("event",eventhandler)
+        
+        elem[0].addEventListener("click",function(e){
+            console.log("clicked",e)
+        })
+        // elem[1].addEventListener("mouseover",function(){
+        //     console.log("clicked mul")
+        // })
+        // elem[2].addEventListener("mouseleave",function(){
+        //     console.log("mouseleave")
+        // })
+
+        let body=document.body
+        body.addEventListener("keypress",function(){
+            console.log("pressed ") 
+        })
+        
+        // function hellohi(event){
+        //     console.log("pressed")
+        // }
+        
+
+
+
+
+   
+        
+
+    </script>
+    
+</body>
+</html>

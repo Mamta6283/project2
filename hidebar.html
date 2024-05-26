@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     #sidebar{
+        background-color: green;
+        width: 300px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: -300px;
+        transition: 0.4s;
+        /* border: 2px solid wheat; */
+    }
+    ul{
+        list-style: none;
+        /* text-align: center; */
+        color: azure;
+        font-weight: 9.0rem;
+
+    }
+</style>
+<body class="bg black" style="background-color: black;">
+    <button onclick="showbar()">menu</button>
+<div id="sidebar">
+    <ul>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+    </ul>
+
+    <button onclick="closebar()">close</button>
+</div>
+<script>
+    let elem=document.getElementById("sidebar")
+
+function showbar(){
+    elem.style.left=0;
+    // elem.style.border="2px"
+
+
+
+}
+
+function closebar(){
+    // elem.style.position="relative"
+
+     elem.style.left="-300px"
+}
+
+</script>
+
+</body>
+</html>
